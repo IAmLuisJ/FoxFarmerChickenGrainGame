@@ -1,0 +1,25 @@
+	while (true)
+	{
+		while (South.Count()<4){
+		cout << North;
+		cout << endl;
+		cout << South;
+		cout << endl;
+		cout << North.Count()<< endl;
+		cout << South.Count()<<endl;
+		cout << "Which item do you want to move?" << endl;
+		cout << "Options: Chicken Fox Grain Nothing" << endl;
+		cin >> item;
+		bool viableMove = MakeMove(item);
+		cout << endl;
+		//if item can makemove return true and changedirection
+		if(viableMove = true)
+		{
+		North.Remove(item);
+		South.Add(item);
+		//ChangeDirection(North,South);
+		}
+		//if item cannot makemove return false and ask for item again
+	}
+	initializeGame(North, South);
+	}
